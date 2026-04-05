@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="grid">
+        <div>
+            <header>
+                <h1 class="pico-color-cyan-450">
+                    <span class="font-roboto">Welcome to <br /></span>
+                    <span class="font-jacquard">{{ site.title }}</span>
+                </h1>
+            </header>
+        </div>
+        <div></div>
+        <div>
+            <h2 class="pico-color-cyan-450 font-roboto" id="clock"></h2>
+        </div>
+    </div>
+    <div id="calendar" hidden>{% include calendar.html%}</div>
+    <div id="notes" hidden>{% include notes.html%}</div>
+    <div id="todo" hidden>{% include todo.html%}</div>
+    <div id="meals" hidden>{% include meals.html%}</div>
+
+    <div role="group">
+        <button
+            id="cals-button"
+            class="font-jacquard outline pico-color-cyan-450"
+        >
+            Calendars
+        </button>
+        <button
+            id="notes-button"
+            class="font-jacquard outline pico-color-cyan-450"
+        >
+            Notes
+        </button>
+        <button
+            id="todos-button"
+            class="font-jacquard outline pico-color-cyan-450"
+        >
+            Todos
+        </button>
+        <button
+            id="meals-button"
+            class="font-jacquard outline pico-color-cyan-450"
+        >
+            Meals
+        </button>
+    </div>
+</div>

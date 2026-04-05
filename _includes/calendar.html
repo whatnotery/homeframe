@@ -1,0 +1,23 @@
+{% assign tomorrow = site.time | date: '%s' | plus: 86400 | date: '%Y-%m-%d' %}
+{% assign next_week = site.time | date: '%s' | plus: 604800 | date: '%Y-%m-%d'
+%} {% assign today = site.time | date: '%Y-%m-%d' %}
+<h3 class="pico-color-cyan-450 font-roboto">Events for</h3>
+
+<div class="grid">
+    {% for calendar in site.calendars.room_mates %}
+    <div>
+        <h2 class="pico-color-cyan-450">
+            <span class="font-jacquard">{{ calendar.name }}</span>
+        </h2>
+        {% ical url: calendar.url reverse: false only_future: true before_date:
+        next_week limit:6 %}
+        <hgroup class="event pico-color-cyan-450">
+            <h4 class="pico-color-cyan-450 font-roboto">{{ event.summary }}</h4>
+            <p class="pico-color-cyan-450 font-roboto">
+                {{ event.start_time | date: "%A the %e at %l:%M%p" }}
+            </p>
+        </hgroup>
+        {% empty %} no events {% endical %}
+    </div>
+    {% endfor %}
+</div>

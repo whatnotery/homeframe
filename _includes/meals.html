@@ -1,0 +1,19 @@
+<h3 class="pico-color-cyan-450 font-roboto">Meals</h3>
+
+<div class="grid">
+    {% for calendar in site.calendars.meals %}
+    <div>
+        {% ical url: calendar.url reverse: false only_future: true before_date:
+        next_week limit:7 %}
+        <hgroup class="event pico-color-cyan-450">
+            <h4 class="pico-color-cyan-450 font-jacquard">
+                {{ event.start_time | date: "%A" }}:
+            </h4>
+            <p class="pico-color-cyan-450 font-roboto">{{ event.summary }}</p>
+        </hgroup>
+        {% empty %}
+        <p class="pico-color-cyan-450 font-roboto">no meals planned</p>
+        {% endical %}
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,23 @@
+# Welcome to Jekyll!
+
+title: Château de Wilgus
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-ical-tag
+
+calendars:
+  room_mates:
+    - name: Jos
+      url: "https://calendar.proton.me/api/calendar/v1/url/JK7H_98fj5iVdDhriSyJXWPU9uXEhzcY4p1vIY1RzUE67F2pPp4IcPg5hUpwdXtGwQKdVkLSWQVPFiGbaHRdCw==/calendar.ics?CacheKey=KpAh0tukMFoiiYXL3YRobQ%3D%3D&PassphraseKey=xbNWnR9V7LpWOUu58WYZLBbb5qTXldkb7Ijrj6Wr3F8%3D"
+    - name: Hannah
+      url: "https://calendar.proton.me/api/calendar/v1/url/VGBMicmf2u-dPkAw0NaukI7t_Ee5eHsW9FviKSefe7iVZDLWHeBW__OYp3eWPmv9PIXrrI_QA-sXcceXEskZSg==/calendar.ics?CacheKey=wxyEKKPpax4-eYcl3WQ3RA%3D%3D&PassphraseKey=kCOLT2q0edDAy2ex5_BgPP_ZLkiAnzOr_ojhkINLj5o%3D"
+    - name: Hannah & Jos
+      url: "https://calendar.proton.me/api/calendar/v1/url/SnhN3iN4XpYVNT2HHRNqJSbWCTtjRAxlyZ3CQR160MeEft1BGLbICuz9uyaKXXqUHgLOr3XBCz-BKHS3YY_AOw==/calendar.ics?CacheKey=xr7_EBbcmCwPE_-6nxpq8g%3D%3D&PassphraseKey=5DhU--8rF-5oelmiC3ICyGiQCM6g9B4jcle8huKa9fc%3D"
+  meals:
+    - name: Weekly Meals
+      url: "https://calendar.proton.me/api/calendar/v1/url/m69wjCyLlUKinV8Dex7eDj1rjOBdpW0cT5HeHAoGG8wki1sM-M_BDE-PV0nHHRxA-dgRrwf_SSOkpiYm2RoQFA==/calendar.ics?CacheKey=xczkga3vZqGrNjEkR7vhvw%3D%3D&PassphraseKey=wfiAj2ZzXcrBfuiq05HZ78Nl3ezwlNtvXHRZd_6HZ08%3D"
